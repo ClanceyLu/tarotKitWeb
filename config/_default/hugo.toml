@@ -1,5 +1,5 @@
 title = "TarotKit"
-baseurl = "https://clanceylu.github.io/tarotKitWeb/"
+baseurl = "http://tarotkit.lisheshu.com/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
