@@ -1,0 +1,19 @@
+[zh]
+languageName = "中文"
+contentDir = "content/zh"
+weight = 20
+[zh.params]
+languageISO = "ZH"
+languageTag = "zh-CN"
+# footer = '由 <a class="text-muted" href="https://thulite.io/">Thulite</a> 提供支持'
+# alertText = '<a class="alert-link stretched-link fw-normal" href="/blog/example-post/">Doks 1.0 版本已发布！</a>'
+
+[en]
+languageName = "English"
+contentDir = "content/en"
+weight = 10
+[en.params]
+languageISO = "EN"
+languageTag = "en-US"
+# footer = 'Brought to you by <a class="text-muted" href="https://thulite.io/">Thulite</a>'
+# alertText = '<a class="alert-link stretched-link fw-normal" href="/blog/example-post/">Doks version 1.0 just shipped!</a>'

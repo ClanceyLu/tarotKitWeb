@@ -1,0 +1,91 @@
+{{ define "main" }}
+<section class="section container-fluid mt-n3 pb-3">
+  <div class="row justify-content-center">
+    <div class="col-lg-12 text-center">
+      <h1>{{ .Title }}</h1>
+    </div>
+    <div class="col-lg-9 col-xl-8 text-center">
+      <p class="lead">{{ .Params.lead | safeHTML }}</p>
+      <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}guides/example-guide/" role="button">{{ i18n "get_started" }}</a>
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "sidebar-prefooter" }}
+  {{ if site.Params.doks.backgroundDots -}}
+  <div class="d-flex justify-content-start">
+    <div class="bg-dots"></div>
+  </div>
+  {{ end -}}
+  {{ if eq $.Site.Language.Lang "en" }}
+  <section class="section section-md section-features">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-5">
+          <h2 class="h4">Refined Interaction</h2>
+          <p>Seamless and intuitive controls make every draw feel like a true Tarot ritual.</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">Smooth Animations</h2>
+          <p>Delicate and fluid animations bring a touch of magic to your Tarot experience.</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">Completely Free</h2>
+          <p>Access all features for free and immerse yourself in the beauty of Tarot.</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">Built-in Tarot Wiki</h2>
+          <p>Detailed card interpretations help you easily uncover the meaning behind each card.</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">Easy Sharing</h2>
+          <p>Generate images with a single tap and share your Tarot results with friends or readers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ if eq $.Site.Language.Lang "zh" }}
+  <section class="section section-md section-features">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-5">
+          <h2 class="h4">精致交互</h2>
+          <p>直观流畅的操作，让每一次抽牌都如亲临占卜仪式般自然。</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">灵动动画</h2>
+          <p>细腻流畅的动画效果，呈现出如魔法般的塔罗体验。</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">内置塔罗百科</h2>
+          <p>详尽的塔罗牌解析，助你轻松理解每一张牌的深意。</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">完全免费</h2>
+          <p>功能全面开放，感受真实的塔罗魅力，无需付费。</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">便捷分享</h2>
+          <p>一键生成图片，轻松分享你的占卜结果给朋友或塔罗师。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+{{ end }}
+
+{{ define "sidebar-footer" }}
+{{ if site.Params.doks.sectionFooter -}}
+<section class="section section-md container-fluid bg-light">
+  <div class="row justify-content-center text-center">
+    <div class="col-lg-7">
+      <h2 class="mt-2">Start building with Doks today</h2>
+      <a class="btn btn-primary rounded-pill px-4 my-2" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}prologue/introduction/" role="button">{{ i18n "get-started" }}</a>
+    </div>
+  </div>
+</section>
+{{ end -}}
+{{ end }}
