@@ -1,5 +1,5 @@
 title = "TarotKit"
-baseurl = "http://tarotkit.lisheshu.com/"
+baseurl = "https://tarotkit.lisheshu.com/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
