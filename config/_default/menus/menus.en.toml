@@ -1,7 +1,6 @@
 [[main]]
 name = "Docs"
-url = "/docs/guides/example-guide/"
-# url = "/docs/1.0/prologue/introduction/"
+url = "/en/docs/guides/tarotkit-user-guide/"
 weight = 10
 
 # [[main]]
@@ -18,5 +17,5 @@ weight = 30
 
 [[footer]]
 name = "Privacy Policy"
-url = "/privacy/"
+url = "/en/privacy/"
 weight = 10

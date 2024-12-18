@@ -23,5 +23,5 @@ weight = 10
 
 [[footer]]
 name = "隐私协议"
-url = "/privacy/"
+url = "/cn/privacy/"
 weight = 10
